@@ -26,6 +26,8 @@ class DeployController extends Controller
 		             echo $buffer;
 		        });
 		    }
+
+		    return response()->json(['message' => "ok" ]);
 		} catch (Exception $e) {
 			
 			Log::error($e->getMessage().' in '.$e->getFile().' at '.$e->getLine());
