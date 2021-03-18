@@ -230,4 +230,16 @@ return [
 
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Application Deploy Key
+    |--------------------------------------------------------------------------
+    |
+    | When your application pushed to git,  Server will automatically pull and
+    | deploy all date to server
+    |
+    */
+   
+   'deploy_secret' => env('APP_DEPLOY_SECRET'),
+
 ];
